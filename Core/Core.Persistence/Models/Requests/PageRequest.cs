@@ -1,4 +1,4 @@
-﻿namespace Core.Persistence.Requests;
+﻿namespace Core.Persistence.Models.Requests;
 
 public class PageRequest : ICloneable
 {
@@ -7,6 +7,6 @@ public class PageRequest : ICloneable
 
     public object Clone()
     {
-        return this.MemberwiseClone();
+        return MemberwiseClone();
     }
 }

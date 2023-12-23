@@ -1,5 +1,5 @@
 ﻿using Core.Persistence.Dynamic;
-using Core.Persistence.Requests;
+using Core.Persistence.Models.Requests;
 
 namespace Core.Persistence.Models.Responses;
 

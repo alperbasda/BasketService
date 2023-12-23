@@ -1,13 +1,12 @@
 ﻿using Core.Persistence.Dynamic;
 using Core.Persistence.Models;
 using Core.Persistence.Paging;
-using Core.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using MongoDB.Driver;
 using System.Linq.Expressions;
 
-namespace MongoDbAdapter.Repository
+namespace Core.Persistence.Repositories
 {
     public class MongoRepositoryBase<TEntity, TEntityId> : IAsyncRepository<TEntity, TEntityId>
         where TEntity : class, IEntity<TEntityId>, new()
