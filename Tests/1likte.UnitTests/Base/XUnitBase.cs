@@ -10,7 +10,7 @@ using _1likte.Application;
 using _1likte.Persistence;
 using Microsoft.Extensions.Configuration;
 
-namespace Shop.UnitTests.Base;
+namespace _1likte.UnitTests.Base;
 
 /// <summary>
 /// Testler için temel sınıftır.
@@ -19,7 +19,7 @@ public class XUnitBase : TestBedFixture
 {
     protected IConfiguration Configuration { get; private set; }
 
-    
+
     public IFixture Fixture { get; protected set; } = CreateFixture();
 
     protected TPoco GeneratePoco<TPoco>(Func<ICustomizationComposer<TPoco>, IPostprocessComposer<TPoco>> customizationAction = null)
